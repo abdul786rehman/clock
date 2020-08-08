@@ -1,0 +1,79 @@
+
+.main-block
+{
+
+    position: absolute;
+    height: 70vh;
+    width: 49.8vw;
+    /* border-radius: 50%; */
+    margin: auto;
+    background-color:transparent;
+    top: 18vh;
+    left: 22vw;
+}
+
+
+
+
+
+
+.circle{
+    z-index: 2;
+    background-image: url('clockbgc.jpg');
+    background-size: 100% 100%;
+    height: 55%;
+    width: 45%;
+    background-color:transparent;
+    border-radius:79% 79%;
+    overflow: hidden;
+    position: absolute;
+    margin:auto;
+    top: 20vh;
+    left: 30vw;
+}
+.nidle-s{
+position: absolute;
+    height:2px;
+    width:90px;
+    background-color:red;
+    top: 49.7% ;
+    left:20%;
+    transform-origin: 100%;
+    border-radius:10px; 
+}
+.nidle-m{
+   position: absolute;
+   top: 49.5% ;
+   left: 24%;
+   height:4px;
+   width:75px;
+   transform-origin: 100%;
+   background-color:yellow;
+   border-radius:10px; 
+   transform-origin: 100%;
+
+
+}
+.nidle-h{
+    position: absolute;
+    top: 49% ;
+    left: 32.5%;
+    width:50px;
+    height:6.5px;
+    background-color:skyblue;
+    transform-origin: 100%;
+    border-radius:10px; 
+
+}
+
+.dot{
+
+   height:17px;
+   width:19px;
+   position: absolute;
+   background-color:black;
+    top: 46.5% ;
+    left: 47.3%;
+    transform-origin: 100%;
+    border-radius: 50%;
+}

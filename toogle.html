@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>< . . >TOOGLE_OPEN</title>
+    <link rel="stylesheet" href="toogle.css">
+</head>
+<body>
+    <!-- <div data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine" 
+    class="rects"> -->
+
+<div class="panels" >
+<div class="panel rect01" >    
+<p> Hey</p>
+<p>Let's</p>
+<p>Crowd</p>
+</div>
+<div class="panel rect1">
+    <p>Let's</p>
+    <p>Expres</p>
+    <p>Dance</p>
+
+</div>
+
+<div class="panel rect2">
+    <p>Make</p>
+    <p>It's</p>
+    <p>fame</p>
+
+</div>
+
+<div class="panel rect3">
+    <p>Life</p>
+    <p>Dance</p>
+    <p>Today</p>
+
+</div>
+
+<div class="panel rect4">
+<p>Easy</p>
+<p>In</p>
+<p>motion</p>
+</div>
+</div>
+
+
+
+</body>
+<script>   
+const panelss=document.querySelectorAll('.panel');
+panelss.forEach((panel)=>{
+    panel.addEventListener('click',toogleOpen)
+})
+panelss.forEach((panel)=>{
+    panel.addEventListener('transitionend',toogleOpenact)
+})
+function toogleOpen(e){
+    this.classList.toggle('open')
+
+}
+function toogleOpenact(e){
+    console.log(e.propertyName)
+    if(e.propertyName.includes('flex')){
+        this.classList.toggle('open-active')
+    }
+}
+
+ </script>
+ 
+</html>
+    
